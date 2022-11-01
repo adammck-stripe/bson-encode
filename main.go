@@ -44,7 +44,7 @@ func main() {
 	if *noEncode {
 		fmt.Print(string(v2))
 	} else {
-		fmt.Print(base64.URLEncoding.Strict().EncodeToString(v2))
+		fmt.Print(base64.StdEncoding.EncodeToString(v2))
 	}
 
 	if !*noNewline {
